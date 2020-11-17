@@ -1,0 +1,47 @@
+@mixin emrex_form_elements {
+  label {
+    font-size: 1.2em;
+    text-align: left;
+    float: left;
+  }
+
+  input {
+    width: 100%;
+    float: left;
+  }
+
+  button {
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  a {
+    margin-top: 10px;
+    float: left;
+  }
+
+  .error {
+    margin: 10px;
+    float: left;
+  }
+
+  .input-error {
+    border-color: red;
+  }
+}
+
+.emrex_form {
+  margin-top: 15px;
+  width: 90%;
+  max-width: 25rem;
+
+  @include emrex_form_elements();
+}
+
+.emrex_double_form {
+  margin-top: 15px;
+  width: 90%;
+  max-width: 55rem;
+
+  @include emrex_form_elements();
+}

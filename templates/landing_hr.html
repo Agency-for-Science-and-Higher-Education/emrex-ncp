@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="hr" xml:lang="hr">
+
+    <head>
+
+        <title>NISpVU2 - EMREX</title>
+
+        <meta charset="utf-8">
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv='x-dns-prefetch-control' content='on'>
+
+        <meta name="theme-color" content="#001491">
+        <meta name="msapplication-navbutton-color" content="#001491">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="NISpVU2 NCP - Hrvatski NCP EMREX mreže za razmijenu studentskih ocjena">
+        <meta name="keywords" content="EMREX,NCP,NISpVU2,AZVO,ASHE,SPU,CAO,Agencija za znanost i visoko obrazovanje,Agency for science and higher education croatia,Središnji prijavni ured,Central applications office,sveučilište,university croatia,universities croatia,veleučilište,college croatia,colleges croatia,visoka učilišta,higher education institutions croatia,studijski program,study programme croatia,study program croatia,studijski programi,study programmes croatia,study programs croatia,diplosmki studijski programi,graduate study programmes croatia,graduate study programs croatia,masters study programmes croatia,masters study programs croatia,diplomski sveučilišni studij,graduate university study programme croatia,graduate university study program croatia,masters university study programme croatia,masters university study program croatia,diplomski stručni studij,graduate professional study programme croatia,graduate professional study program croatia,masters professional study programme croatia,masters professional study program croatia,diplomski studij,graduate study programme croatia,graduate study program croatia,masters study programme croatia,masters study program croatia,emrex croatia,e-Građani,e-usluge">
+        <meta name="subject" content="Središnja prijava na studije">
+        <meta name="author" content="Inversius">
+        <meta name="copyright" content="Središnji prijavni ured">
+        <meta name="designer" content="075240273d6d91ffe7055dc3bf56d905989beecc">
+        <meta name="coverage" content="Worldwide">
+        <meta name="distribution" content="Global">
+        <meta name="url" content="https://emrex.studij.hr">
+        <meta name="identifier-URL" content="https://emrex.studij.hr">
+        <meta name="google-site-verification" content="1111">
+
+        <meta name="apple-mobile-web-app-title" content="NISpVU2">
+        <meta name="application-name" content="NISpVU2">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="https://cdn.studij.hr/images/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="https://cdn.studij.hr/images/favicons/browserconfig.xml">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#1d3e51">
+
+        <link rel="dns-prefetch" href="//cdn.studij.hr">
+        <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.studij.hr/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="https://cdn.studij.hr/images/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://cdn.studij.hr/images/favicons/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="https://cdn.studij.hr/images/favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="https://cdn.studij.hr/images/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="https://cdn.studij.hr/images/favicons/safari-pinned-tab.svg" color="#fe0106">
+
+        <link rel="canonical" href="https://emrex.studij.hr/">
+        <link rel="shortlink" href="https://emrex.studij.hr/">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <meta property="og:title" content="emrex.studij.hr">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://cdn.studij.hr/images/favicons/apple-touch-icon.png">
+        <meta property="og:image:secure_url" content="https://cdn.studij.hr/images/favicons/apple-touch-icon.png">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="400">
+        <meta property="og:image:height" content="300">
+        <meta property="og:url" content="https://emrex.studij.hr">
+        <meta property="og:description" content="NISpVU2 NCP - Hrvatski NCP EMREX mreže za razmijenu studentskih ocjena">
+        <meta property="og:locale" content="hr_HR">
+        <meta property="og:site_name" content="NISpVU2">
+
+        <link rel="stylesheet" href="css/emrex.css">
+
+        <base href="/">
+
+    </head>
+
+    <body ng-app="LandingApp">
+
+        <div class="top-bar-container" data-sticky-container>
+            <div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+                <nav data-magellan>
+                    <div class="top-bar" id="login-menu">
+                        <div class="top-bar-left">
+                            <ul class="menu">
+                                <li class="menu">
+                                    <a ng-click="showLanding()">
+                                        <b>emrex.studij.hr</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-bar-right">
+                            <ul class="menu">
+                                <li class="menu"><a ng-click="changeLanguage()">[[ 'LANGUAGE' | translate ]]</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row align-center align-middle login" ng-controller="LandingController">
+
+            <div class="row align-center align-middle">
+                <div class="small-6 medium-6 large-5 columns">
+                    <div class="login-card">
+                        <div class="image">
+                            <a ng-click="nias()"><img src="https://cdn.studij.hr/images/domestic.png"></a>
+                        </div>
+                        <div class="red-button footer">
+                            <a class="expanded button red-button" ng-click="nias()">[[ 'LOGIN' | translate ]]</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-6 medium-6 large-5 columns">
+                    <div class="login-card">
+                        <div class="image">
+                            <a href="https://www.studij.hr"><img src="https://cdn.studij.hr/images/studij.png"></a>
+                        </div>
+                        <div class="blue-button footer">
+                            <a class="expanded button blue-button" href="https://www.studij.hr">[[ 'STUDIJ.HR' | translate ]]</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script async src="js/emrex.js"></script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2636501-13"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-2636501-13');
+        </script>
+
+    </body>
+
+</html>

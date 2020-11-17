@@ -1,0 +1,360 @@
+{
+	"_links": {
+		"self": {
+			"href": "https://www.isvu.hr/api/vu/269/student/jmbag/0269126475/sumarno"
+		},
+		"profile": {
+			"href": "https://www.isvu.hr/api/dokumentacija/v2-hal/linkovi/student/student/sumarnipodaci/index.html"
+		}
+	},
+	"_embedded": {
+		"upisaniElementiStruktureStudija": [
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+			{
+				"sifra": 11,
+				"paralelni": "NE",
+				"naziv": "Pedagogija (dvopredmetni)",
+				"akademskaGodinaZadnjegUpisnogLista": 2019,
+				"nastavnaGodina": 3,
+				"_embedded": {
+					"nepolozeniPredmeti": [],
+					"pravoNaPrehranu": {
+						"datumUpisaZadnjegUpisnogLista": "25.09.2019.",
+						"datumPravaOd": "01.10.2017.",
+						"datumPravaDo": "15.10.2021.",
+						"_embedded": {
+							"visokoUcilisteNaKojemOstvarujePravo": {
+								"sifra": 130,
+								"naziv": "Sveučilište u Zadru"
+							},
+							"razinaPravaNaPrehranu": {
+								"naziv": "Student-nedomicilni",
+								"sifraNivoPrava": 2,
+								"_links": {
+									"katalog_student_razinapravanaprehranu": {
+										"href": "https://www.isvu.hr/api/vu/269/katalog/razinapravanaprehranu"
+									}
+								}
+							}
+						}
+					},
+					"razlogPrestankaPrava": {
+						"sifra": 1,
+						"naziv": "Završio studij",
+						"_links": {
+							"katalog_student_razlogprestankaprava": {
+								"href": "https://www.isvu.hr/api/vu/269/katalog/razlogprestankaprava"
+							}
+						}
+					},
+					"temeljFinanciranja": {
+						"sifra": 1,
+						"opis": "uspjeh (EU)",
+						"placanje": "NE",
+						"_links": {
+							"katalog_upisgodine_temeljfinanciranja": {
+								"href": "https://www.isvu.hr/api/vu/269/katalog/temeljfinanciranja"
+							}
+						},
+						"_embedded": {
+							"nacinIzvedbeStudijaUzKojiSeTemeljFinanaciranjaMozePojaviti": {
+								"oznaka": "R",
+								"naziv": "Redovni",
+								"_links": {
+									"katalog_nastavniprogram_nacinizvedbestudija": {
+										"href": "https://www.isvu.hr/api/vu/269/katalog/nacinizvedbestudija"
+									}
+								}
+							}
+						}
+					},
+					"polozeniPredmeti": [
+						{
+							"_embedded": {
+								"predmet": {
+									"sifra": 48714,
+									"naziv": "Osnove sociologije",
+									"ectsBodovi": 5.0,
+									"satiUkupno": 45,
+									"ulaziUProsjek": "DA",
+									"zaPraviloPrijenosa": "DA",
+									"_embedded": {
+										"nacinUpisa": {
+											"sifra": 1,
+											"opis": "Prvi put",
+											"_links": {
+												"katalog_upisgodine_nacinupisapredmeta": {
+													"href": "https://www.isvu.hr/api/vu/269/katalog/nacinupisapredmeta"
+												}
+											}
+										},
+										"semestar": {
+											"redniBroj": 1
+										},
+										"status": {
+											"sifra": 5,
+											"opis": "obavljen (položen)",
+											"_links": {
+												"katalog_upisgodine_statusupisanogpredmeta": {
+													"href": "https://www.isvu.hr/api/vu/269/katalog/statusupisanogpredmeta"
+												}
+											}
+										}
+									}
+								},
+								"ispit": {
+									"datumIspita": "20.02.2018.",
+									"datumRoka": "20.02.2018.",
+									"ocjena": "4",
+									"_embedded": {
+										"ocjenjivac": {
+											"oznaka": "KK058",
+											"ime": "Krešimir",
+											"prezime": "Krolo"
+										}
+									}
+								}
+							}
+						},
+						{
+							"_embedded": {
+								"predmet": {
+									"sifra": 116077,
+									"naziv": "Statistika u pedagogijskom istraživanju 2.",
+									"ectsBodovi": 4.0,
+									"satiUkupno": 60,
+									"ulaziUProsjek": "DA",
+									"zaPraviloPrijenosa": "DA",
+									"_embedded": {
+										"nacinUpisa": {
+											"sifra": 1,
+											"opis": "Prvi put",
+											"_links": {
+												"katalog_upisgodine_nacinupisapredmeta": {
+													"href": "https://www.isvu.hr/api/vu/269/katalog/nacinupisapredmeta"
+												}
+											}
+										},
+										"semestar": {
+											"redniBroj": 2
+										},
+										"status": {
+											"sifra": 5,
+											"opis": "obavljen (položen)",
+											"_links": {
+												"katalog_upisgodine_statusupisanogpredmeta": {
+													"href": "https://www.isvu.hr/api/vu/269/katalog/statusupisanogpredmeta"
+												}
+											}
+										}
+									}
+								},
+								"ispit": {
+									"datumIspita": "12.06.2018.",
+									"datumRoka": "12.06.2018.",
+									"ocjena": "3",
+									"_embedded": {
+										"ocjenjivac": {
+											"oznaka": "MB217",
+											"ime": "Marija",
+											"prezime": "Buterin Mičić"
+										}
+									}
+								}
+							}
+						}
+					]
+				}
+            },
+            
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+			{
+				"sifra": 16,
+				"paralelni": "NE",
+				"naziv": "Sociologija (dvopredmetni)",
+				"akademskaGodinaZadnjegUpisnogLista": 2019,
+				"nastavnaGodina": 3,
+				"_embedded": {
+					"nepolozeniPredmeti": [],
+					"pravoNaPrehranu": {
+						"datumUpisaZadnjegUpisnogLista": "25.09.2019.",
+						"datumPravaOd": "01.10.2017.",
+						"datumPravaDo": "15.10.2021.",
+						"_embedded": {
+							"visokoUcilisteNaKojemOstvarujePravo": {
+								"sifra": 130,
+								"naziv": "Sveučilište u Zadru"
+							},
+							"razinaPravaNaPrehranu": {
+								"naziv": "Student-nedomicilni",
+								"sifraNivoPrava": 2,
+								"_links": {
+									"katalog_student_razinapravanaprehranu": {
+										"href": "https://www.isvu.hr/api/vu/269/katalog/razinapravanaprehranu"
+									}
+								}
+							}
+						}
+					},
+					"razlogPrestankaPrava": {
+						"sifra": 1,
+						"naziv": "Završio studij",
+						"_links": {
+							"katalog_student_razlogprestankaprava": {
+								"href": "https://www.isvu.hr/api/vu/269/katalog/razlogprestankaprava"
+							}
+						}
+					},
+					"temeljFinanciranja": {
+						"sifra": 1,
+						"opis": "uspjeh (EU)",
+						"placanje": "NE",
+						"_links": {
+							"katalog_upisgodine_temeljfinanciranja": {
+								"href": "https://www.isvu.hr/api/vu/269/katalog/temeljfinanciranja"
+							}
+						},
+						"_embedded": {
+							"nacinIzvedbeStudijaUzKojiSeTemeljFinanaciranjaMozePojaviti": {
+								"oznaka": "R",
+								"naziv": "Redovni",
+								"_links": {
+									"katalog_nastavniprogram_nacinizvedbestudija": {
+										"href": "https://www.isvu.hr/api/vu/269/katalog/nacinizvedbestudija"
+									}
+								}
+							}
+						}
+					},
+					"polozeniPredmeti": [
+						{
+							"_embedded": {
+								"predmet": {
+									"sifra": 48714,
+									"naziv": "Osnove sociologije",
+									"ectsBodovi": 5.0,
+									"satiUkupno": 45,
+									"ulaziUProsjek": "DA",
+									"zaPraviloPrijenosa": "DA",
+									"_embedded": {
+										"nacinUpisa": {
+											"sifra": 1,
+											"opis": "Prvi put",
+											"_links": {
+												"katalog_upisgodine_nacinupisapredmeta": {
+													"href": "https://www.isvu.hr/api/vu/269/katalog/nacinupisapredmeta"
+												}
+											}
+										},
+										"semestar": {
+											"redniBroj": 1
+										},
+										"status": {
+											"sifra": 5,
+											"opis": "obavljen (položen)",
+											"_links": {
+												"katalog_upisgodine_statusupisanogpredmeta": {
+													"href": "https://www.isvu.hr/api/vu/269/katalog/statusupisanogpredmeta"
+												}
+											}
+										}
+									}
+								},
+								"ispit": {
+									"datumIspita": "20.02.2018.",
+									"datumRoka": "20.02.2018.",
+									"ocjena": "4",
+									"_embedded": {
+										"ocjenjivac": {
+											"oznaka": "KK058",
+											"ime": "Krešimir",
+											"prezime": "Krolo"
+										}
+									}
+								}
+							}
+						},
+						{
+							"_embedded": {
+								"predmet": {
+									"sifra": 183553,
+									"naziv": "Inkluzivna pedagogija u praksi",
+									"ectsBodovi": 3.0,
+									"satiUkupno": 30,
+									"ulaziUProsjek": "DA",
+									"zaPraviloPrijenosa": "DA",
+									"_embedded": {
+										"nacinUpisa": {
+											"sifra": 1,
+											"opis": "Prvi put",
+											"_links": {
+												"katalog_upisgodine_nacinupisapredmeta": {
+													"href": "https://www.isvu.hr/api/vu/269/katalog/nacinupisapredmeta"
+												}
+											}
+										},
+										"semestar": {
+											"redniBroj": 6
+										},
+										"status": {
+											"sifra": 5,
+											"opis": "obavljen (položen)",
+											"_links": {
+												"katalog_upisgodine_statusupisanogpredmeta": {
+													"href": "https://www.isvu.hr/api/vu/269/katalog/statusupisanogpredmeta"
+												}
+											}
+										}
+									}
+								},
+								"ispit": {
+									"datumIspita": "16.06.2020.",
+									"datumRoka": "10.06.2020.",
+									"ocjena": "4",
+									"_embedded": {
+										"ocjenjivac": {
+											"oznaka": "SZ016",
+											"ime": "Smiljana",
+											"prezime": "Zrilić"
+										}
+									}
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"student": {
+			"jmbag": "0269126475",
+			"ime": "Marko",
+			"prezime": "Užarević"
+		}
+	}
+}

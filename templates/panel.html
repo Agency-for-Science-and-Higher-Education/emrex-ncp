@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <meta name="theme-color" content="#001491">
+        <meta name="msapplication-navbutton-color" content="#001491">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <meta name="author" content="Inversius">
+        <meta name="designer" content="075240273d6d91ffe7055dc3bf56d905989beecc">
+
+        <title>NISpVU2 NCP</title>
+
+        <link rel="stylesheet" href="css/emrex.css">
+
+        <base href="/">
+
+    </head>
+
+    <body ng-app="EMREXApp">
+
+        <div class="top-bar-container" data-sticky-container>
+            <div class="sticky" data-sticky data-check-every="0" data-options="anchor: page; marginTop: 0; stickyOn: small;">
+                <nav data-magellan>
+                    <div class="top-bar" id="full-menu">
+                        <div class="top-bar-left">
+                            <ul class="menu">
+                                <li class="menu">
+                                    <a ng-click="showMenu()">
+                                        <b><  emrex.studij.hr</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-bar-right">
+                            <ul class="menu">
+                                <li class="menu"><a href="https://cdn.studij.hr/data/EMREX upute.pdf" target="_blank">[[ 'INSTRUCTIONS' | translate ]]</a></li>
+                                <li class="menu"><span data-tooltip aria-haspopup="true" class="has-tip" title="[[ 'HELP_TEXT' | translate ]]">?&nbsp;&nbsp;&nbsp;</span></li>
+                                <li class="menu"><a href="/log_out">[[ 'LOGOUT' | translate ]]</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row align-center align-middle login" ng-class="{'hidden':menuFlag}" ng-controller="UserController">
+
+            <div class="row align-center align-middle">
+                <div class="small-12 medium-6 large-6 columns" ng-repeat="executor in executors.executors">
+
+                    <div class="executor-card" ng-click="showGrades(executor.isvu)">
+                        <div class="content">
+                            <div class="image">
+                                <img src="https://cdn.studij.hr/data/executors/[[ executor.id ]].png">
+                            </div>
+                            <div class="text">
+                                [[ executor.name ]]
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row align-center align-middle hidden" ng-class="{'hidden':gradesFlag}">
+            <div class="small-12 medium-12 large-9 columns" id="user" ng-controller="UserController">
+
+                <div class="card">
+                    <div class="content">
+                        <div style="float:left;" class="title">[[ 'ABOUT' | translate ]]</div>
+                        <div style="float:right;">
+                            <a href="https://www.youtube.com/watch?v=aRk14_vVefY" target="_blank"><img src="https://cdn.studij.hr/images/video.png"></a>
+                            <a href="https://www.emrex.eu" target="_blank"><img src="https://cdn.studij.hr/images/emrex_logo.png"></a>
+                        </div>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>[[ 'OIB' | translate ]]</td>
+                                <td>[[ data.oib ]]</td>
+                            </tr>
+                            <tr>
+                                <td>[[ 'NAME' | translate ]]</td>
+                                <td>[[ data.name ]]</td>
+                            </tr>
+                            <tr>
+                                <td>[[ 'SURNAME' | translate ]]</td>
+                                <td>[[ data.surname ]]</td>
+                            </tr>
+                            <tr>
+                                <td>[[ 'DATE_OF_BIRTH' | translate ]]</td>
+                                <td>[[ data.dob ]]</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div ng-show="data.sessionId != undefined">
+                            <br>
+                            <a target="_self" ng-click="transfer()" class="button">[[ 'TRANSFER' | translate ]]</a>
+                            <a target="_self" ng-click="cancel()"   class="button">[[ 'CANCEL' | translate ]]</a>
+                        </div>
+                        <div ng-show="data.sessionId == undefined">
+                            <br>
+                            <a target="_blank" ng-click="downloadXML()" id="pdf" class="button">[[ 'XML' | translate ]]</a>
+                            <a target="_self"  ng-click="downloadPDF()" id="xml" class="button">[[ 'PDF' | translate ]]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" ng-show="data.university.executor_name == null">
+                    <div class="action" style="background: red;"></div>
+                    <div class="content">
+                        <div class="title">[[ 'SP_INFO' | translate ]]</div>
+                        <div>[[ data.university.executor_name ]][[ 'NO_SP' | translate ]]</div>
+                    </div>
+                </div>
+
+                <div class="card" ng-repeat="sp in data.university.study" ng-show="data.university.executor_name != null">
+                    <div class="action" style="background: green;"></div>
+                    <div class="content">
+                        <div class="title">[[ 'SP_INFO' | translate ]]</div>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>[[ 'EXECUTOR' | translate ]]</td>
+                                <td>[[ data.university.executor_name ]]</td>
+                            </tr>
+                            <tr>
+                                <td>[[ 'STUDY' | translate ]]</td>
+                                <td>[[ sp.title ]]</td>
+                            </tr>
+                            <tr>
+                                <td>[[ 'STATUS' | translate ]]</td>
+                                <td>[[ sp.status ]]</td>
+                            </tr>
+                            <tr>
+                                <td>[[ 'DATE_FINISHED' | translate ]]</td>
+                                <td>[[ sp.sp_end ]]</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="education">
+                            <thead>
+                            <tr>
+                                <th>[[ 'IDENTIFIER' | translate ]]</th>
+                                <th>[[ 'SUBJECT' | translate ]]</th>
+                                <th>[[ 'GRADE' | translate ]]</th>
+                                <th>[[ 'ECTS' | translate ]]</th>
+                                <th>[[ 'DATE' | translate ]]</th>
+                            </tr>
+                            </thead>
+                            <tbody ng-repeat="grade in sp.grades">
+                            <tr>
+                                <td>[[ grade.identifier ]]</td>
+                                <td>[[ grade.title ]]</td>
+                                <td>[[ grade.resultLabel ]]</td>
+                                <td>[[ grade.value ]]</td>
+                                <td>[[ grade.date ]]</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <form id="ncp_form" action="[[ returnUrl ]]" method="POST">
+                    <input type="hidden" name="sessionId" value="[[ data.sessionId ]]">
+                    <input type="hidden" name="returnCode" id="return_code" value="NCP_OK">
+                    <input type="hidden" name="returnMessage" value="">
+                    <input type="hidden" name="elmo" value="" id="elmo_file">
+                </form>
+
+            </div>
+
+        </div>
+
+        <script async src="js/emrex.js"></script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2636501-13"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-2636501-13');
+        </script>
+
+    </body>
+
+</html>

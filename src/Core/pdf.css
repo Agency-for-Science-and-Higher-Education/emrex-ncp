@@ -1,0 +1,66 @@
+body {
+    font-size: 14px;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+}
+.crest {
+    margin-left: 20px;
+    width: 15%;
+    float: left;
+}
+.filler {
+    width: 70%;
+}
+.logo {
+    width : 15%;
+    float: right;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+    padding: 3px 5px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.grades-table > th, .grades-table > td {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid black;
+    padding: 3px 5px;
+    overflow: hidden;
+    word-break: normal;
+}
+.grades-table > th {
+    background-color: grey;
+}
+.right {
+    text-align: right;
+    vertical-align: top;
+}
+.left {
+    text-align: left;
+    vertical-align: top;
+}
+.center {
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+}
+.number {
+    width: 5%;
+}
+.name {
+    width: 50%;
+}
+.ects {
+    width: 8%;
+}
+.grade {
+    width: 17%;
+}
